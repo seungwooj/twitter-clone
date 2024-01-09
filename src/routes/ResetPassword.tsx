@@ -8,6 +8,7 @@ import {
   Form,
   Input,
   Switcher,
+  SwitcherBottom,
   Title,
   Wrapper,
 } from "../components/AuthComponents";
@@ -66,17 +67,17 @@ export default function ResetPassword() {
         />
         <Input
           type="submit"
-          value={isLoading ? "Loading..." : "Create Account"}
+          value={isLoading ? "Loading..." : "Reset Password"}
         />
         {error !== "" ? <Error>{error}</Error> : null}
         <Switcher>
           New to 𝕏?
           <Link to={"/create-account"}> Log in &rarr;</Link>
         </Switcher>
-        <Switcher isSecond>
+        <SwitcherBottom>
           Already a member of 𝕏?
           <Link to={"/login"}> Log in &rarr;</Link>
-        </Switcher>
+        </SwitcherBottom>
         <GithubButton />
       </Form>
     </Wrapper>

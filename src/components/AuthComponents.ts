@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-interface Props {
-  isSecond?: boolean;
-}
-
 export const Wrapper = styled.div`
   height: 100%;
   display: flex;
@@ -47,9 +43,14 @@ export const Error = styled.span`
   color: tomato;
 `;
 
-export const Switcher = styled.span<Props>`
-  margin-top: ${(props) => (props.isSecond ? "5px" : "20px")};
+export const Switcher = styled.span`
+  margin-top: 20px;
+
   a {
     color: #1d9bf0;
   }
+`;
+
+export const SwitcherBottom = styled(Switcher)`
+  margin-top: 5px;
 `;

@@ -8,6 +8,7 @@ import {
   Form,
   Input,
   Switcher,
+  SwitcherBottom,
   Title,
   Wrapper,
 } from "../components/AuthComponents";
@@ -100,10 +101,10 @@ export default function CreateAccount() {
           Already a member of 𝕏?
           <Link to={"/login"}> Log in &rarr;</Link>
         </Switcher>
-        <Switcher isSecond>
+        <SwitcherBottom>
           Forgot the Password?
           <Link to={"/reset-password"}> Reset Password&rarr;</Link>
-        </Switcher>
+        </SwitcherBottom>
         <GithubButton />
       </Form>
     </Wrapper>
