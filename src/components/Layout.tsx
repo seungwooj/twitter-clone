@@ -14,6 +14,9 @@ const Wrapper = styled.div`
   padding: 50px 0px;
   width: 100%;
   max-width: 860px;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Menu = styled.div`
